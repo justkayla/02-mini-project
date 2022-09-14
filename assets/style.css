@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --purple: purple;
+    --pink: pink;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 3rem;   
+}
+
+h1, h2, h3 {
+    color: var(--pink);
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: left;
+    color: var(--purple);
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+header p {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3%; 
+    color: whitesmoke; 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;    
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+        );
+}
+
+.code-card, .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out; 
+    border: 2px dashed whitesmoke;    
+}
+
+.code-card:hover, .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -5px;
+    border: 2px solid whitesmoke;
+    background-color: gray;    
+}
+
+.code-block {
+    background-color: var(--purple);
+    color: whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
