@@ -27,7 +27,7 @@ h1, h2, h3 {
 }
 
 h2{
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
 }
 
@@ -55,7 +55,11 @@ header p {
 
 .column {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;         
+}
+
+.card-column {
+    flex: 1;    
 }
 
 .grid {
@@ -93,6 +97,7 @@ header p {
     color: whitesmoke;
     border-radius: 30px;
     padding: 10px;
+    user-select: all;       /* quick select */
 }
 
 footer {
@@ -100,3 +105,22 @@ footer {
     padding: 20px;
 }
 
+@media screen and (max-width: 992px) {
+     {
+      ;
+    }
+}
+
+@media screen and (max-width: 992px) {
+     {
+      ;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    {
+     ;
+   }
+}
+
+    
