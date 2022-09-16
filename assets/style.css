@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 :root {
     --purple: purple;
@@ -51,28 +51,42 @@ header p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;      /* rem: root element font size */
 }
 
-.column {
+/* .column {
     display: flex;
     flex-direction: column;         
-}
+} */
 
 .card-column {
-    flex: 1;    
+    flex: 1;
 }
 
-.grid {
+/* 0 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem */
+
+/* .grid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
-}
+} */
 
 .linear-gradient-background {
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%,
         rgba(232, 102, 236, 0.6) 100%
         );
+}
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;    
 }
 
 .code-card, .card-header {
